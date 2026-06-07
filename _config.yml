@@ -1,5 +1,7 @@
 theme: jekyll-theme-chirpy
 
+permalink: /posts/:title/
+
 lang: en
 timezone: Europe/Rome
 
