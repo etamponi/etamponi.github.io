@@ -61,3 +61,15 @@ And most of it is very simple, easy rules. But, almost magically, they make you 
 Yes, there is still *some* luck involved. Yes, there is still *some* ad-hoc "cleverness" you have to apply. But most of the job won't be like that anymore. And if you can circumscribe the parts that need "luck" and "cleverness", you end up in a better spot and you can win the game, for real! Almost every time. Those few times in which you can't: okay! Go with a little experiment, but it will be one guess, not 20 or 30!
 
 It's exactly like minesweeper.
+
+## Spill the tea then, what's the secret?
+
+I hope to be diligent enough to follow up to this post with more posts in which I show which patterns help me in software engineering. But the post was not about revealing strange secrets. My goal was to show you that following simple rules, seemingly unrelated to the final goal, is actually an excellent recipe for success.
+
+If you want a list, I'd say:
+
+1) Stick to clear, verifiable, *fast* rules that tell you which path to pick. Agents are great at helping you here: you give them a list of rules, and they can help you review a lot of code. Of course use them only when type checkers, linters and tests aren't enough.
+
+2) know your "mines": ie, "code smells". My favorite now is: *never write code that relies only on offsets*. I like it because it's also a classical example of rule that raises a lot of eyebrows. "How can this be a good rule?!" It's a rule you value after a lot of experience showed you it's valid.
+
+3) know your tradeoffs. Is it really worth trading a bit more speed *today* with a whole lot of maintainability issues tomorrow? Perhaps the answer is yes. But you should ask yourself that question, and most importantly, you need to know what maintainable code (and infrastructure) looks like (see the point above).
