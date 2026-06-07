@@ -1,0 +1,122 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: Europe/Rome
+
+title: Emanuele Tamponi
+tagline: tech & philosophy
+description: >-
+  Personal blog by Emanuele Tamponi. Thoughts on software engineering,
+  machine learning, philosophy, and where they intersect.
+
+url: "https://etamponi.github.io"
+
+github:
+  username: etamponi
+
+social:
+  name: Emanuele Tamponi
+  email: emanuele.tamponi@gmail.com
+  links:
+    - https://github.com/etamponi
+
+avatar: ""
+
+toc: true
+
+comments:
+  provider: giscus
+  giscus:
+    repo: etamponi/etamponi.github.io
+    repo_id: ""
+    category: "General"
+    category_id: ""
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: en
+    reactions_enabled: 1
+
+paginate: 10
+
+# Math rendering with KaTeX
+math: true
+
+# Mermaid diagrams
+mermaid: true
+
+# Theme mode: light/dark/auto
+theme_mode: auto
+
+# CDN for assets (leave empty to use default)
+cdn: ""
+
+# Analytics
+analytics:
+  google:
+    id: ""
+
+# SEO
+google_site_verification: ""
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      math: false
+      mermaid: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "rollup.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
