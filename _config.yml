@@ -112,6 +112,15 @@ exclude:
   - "rollup.config.js"
   - "package*.json"
 
+plugins:
+  - jekyll-feed
+
+feed:
+  title: "Emanuele Tamponi"
+  description: "Thoughts on software engineering, machine learning, philosophy, and where they intersect."
+  posts_limit: 20
+  excerpt_only: false
+
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
