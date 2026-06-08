@@ -24,8 +24,6 @@ I rarely have this attitude toward software engineering challenges though. But I
 
 And finding them is not easy. You don't brute force finding them. But when you find them, they feel exactly like magic. Finally, a lot of the things that just "randomly worked" can be engineered and effectively reproduced. Things that required lots of trial and error, whole nighters, and a ton of luck, now feel ordinary and easy, obvious.
 
-I was very lucky: I found them.
-
 I always struggled to tell people what it looks like when you find the right set of software engineering heuristics and stick to them. But then I discovered something incredible about minesweeper, and I hope it will resonate with you too, so perhaps you'll buy into my arguments!
 
 Perhaps you feel about software engineering practices and its problems like I felt about minesweeper. I am pretty sure it's exactly like minesweeper.
@@ -62,11 +60,11 @@ Yes, there is still *some* luck involved. Yes, there is still *some* ad-hoc "cle
 
 It's exactly like minesweeper.
 
-## Spill the tea then, what's the secret?
+## Give us some examples, then!
 
-I hope to be diligent enough to follow up to this post with more posts in which I show which patterns help me in software engineering. But the post was not about revealing strange secrets. My goal was to show you that following simple rules, seemingly unrelated to the final goal, is actually an excellent recipe for success.
+The post was not about revealing who knows which secrets. My goal was to show you that following simple rules, seemingly unrelated to the final goal, is actually an excellent recipe for success. It's likely that someone that works for you is already very vocal about many of them. 
 
-If you want a list, I'd say:
+The rules themselves are many, and it'd take another post to list them. How do you identify a good development pattern?
 
 1) Stick to clear, verifiable, *fast* rules that tell you which path to pick. Agents are great at helping you here: you give them a list of rules, and they can help you review a lot of code. Of course use them only when type checkers, linters and tests aren't enough.
 
