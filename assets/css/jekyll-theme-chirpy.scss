@@ -1,0 +1,16 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* custom overrides */
+
+#toc-bar {
+  z-index: 100 !important;
+  background-color: var(--main-bg) !important;
+}
