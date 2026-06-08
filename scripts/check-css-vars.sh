@@ -95,10 +95,24 @@ while IFS= read -r var; do
   fi
 done <<< "$USED_VARS"
 
+# ── 5. Verifica theme_mode in _config.yml ──
+# "auto" non è un valore valido per Chirpy: genera data-mode="auto" sull'HTML,
+# che non corrisponde a nessun selettore CSS (solo html:not([data-mode]),
+# html[data-mode='light'], html[data-mode='dark'] sono gestiti).
+# Il risultato è che --main-bg e tutte le variabili di tema non vengono mai definite.
+
+THEME_MODE=$(grep -E '^\s*theme_mode\s*:' "$REPO_DIR/_config.yml" | sed "s/.*theme_mode[[:space:]]*:[[:space:]]*//" | tr -d "\"'" | xargs 2>/dev/null || true)
+if [[ -n "$THEME_MODE" && "$THEME_MODE" != "light" && "$THEME_MODE" != "dark" ]]; then
+  echo "" >&2
+  echo "  ✗ _config.yml: theme_mode: \"$THEME_MODE\" non è un valore valido per Chirpy." >&2
+  echo "    Usa \"light\", \"dark\", oppure lascia theme_mode non impostato (per sistema automatico)." >&2
+  ERRORS=$((ERRORS + 1))
+fi
+
 if [[ $ERRORS -gt 0 ]]; then
   echo ""
-  echo "check-css-vars: FALLITO — $ERRORS variabile/i CSS non definita/e nel tema." >&2
-  echo "Verifica i nomi su: https://github.com/cotes2020/jekyll-theme-chirpy/tree/${CHIRPY_TAG}/_sass/themes/" >&2
+  echo "check-css-vars: FALLITO — $ERRORS errore/i trovato/i." >&2
+  echo "Variabili CSS: https://github.com/cotes2020/jekyll-theme-chirpy/tree/${CHIRPY_TAG}/_sass/themes/" >&2
   exit 1
 fi
 

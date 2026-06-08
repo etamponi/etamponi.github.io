@@ -47,8 +47,8 @@ math: true
 # Mermaid diagrams
 mermaid: true
 
-# Theme mode: light/dark/auto
-theme_mode: auto
+# Theme mode: light or dark only; leave unset for system preference (auto)
+# theme_mode: light
 
 # CDN for assets (leave empty to use default)
 cdn: ""
