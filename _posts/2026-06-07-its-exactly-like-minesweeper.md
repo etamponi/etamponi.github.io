@@ -42,9 +42,10 @@ Anyway, back to minesweeper. Even after this first unlock, I couldn't finish *al
 
 And while having no internet on a very long flight, I started clicking random buttons on the minesweeper app on my phone and found this help page:
 
-![Minesweeper patterns — Reduction technique and Holes](/assets/img/posts/minesweeper/patterns-1.jpg)
-
-![Minesweeper patterns — the 1-1 rule and the 1-2 Golden Rule](/assets/img/posts/minesweeper/patterns-2.jpg)
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; justify-content: center;">
+  <img src="/assets/img/posts/minesweeper/patterns-1.jpg" alt="Minesweeper patterns — Reduction technique and Holes" style="flex: 1 1 280px; max-width: 48%;">
+  <img src="/assets/img/posts/minesweeper/patterns-2.jpg" alt="Minesweeper patterns — the 1-1 rule and the 1-2 Golden Rule" style="flex: 1 1 280px; max-width: 48%;">
+</div>
 
 What??? I spent countless hours playing minesweeper. I can't believe I didn't notice these simple rules (and by "rules" I don't mean the basics — I mean the *patterns* that arise from them, like the ones in those images above)... After reading them, I was a bit skeptical. I knew the basics and some simple patterns: these new ones didn't seem so groundbreaking! But I decided to give them a try.
 
