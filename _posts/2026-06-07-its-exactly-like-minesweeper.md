@@ -44,7 +44,7 @@ And while having no internet on a very long flight, I started clicking random bu
 
 ![Minesweeper patterns — the 1-1 rule and the 1-2 Golden Rule](/assets/img/posts/minesweeper/patterns-2.jpg)
 
-What??? I spent countless hours playing minesweeper. I can't believe I didn't notice these simple rules... Definitely they're not as helpful as they claim in this help page... Well, let's give them a try.
+What??? I spent countless hours playing minesweeper. I can't believe I didn't notice these simple rules (and by "rules" I don't mean the basics — I mean the *patterns* that arise from them, like the ones in those images above)... Definitely they're not as helpful as they claim in this help page... Well, let's give them a try.
 
 Initially, of course, I had to slow down to try them out. Before, I could easily finish a "lucky" game in 40–50 seconds. And then I had to give up around 20% of the times without any "logical" moves. But now?? Now I can finish almost any game... I am a bit slower still, because I have to apply more rules... But there is a logic to it then!
 
