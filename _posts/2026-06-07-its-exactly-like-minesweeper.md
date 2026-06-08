@@ -6,6 +6,8 @@ tags: [heuristics, craftsmanship]
 description: People resist small changes because they've given up on the underlying problem. But the problem is solvable — it's exactly like minesweeper.
 ---
 
+## A surprising similarity
+
 It often happens to me to be in a discussion like this:
 
 > But how does adding types fix this problem with missing data? We will always have problems with missing data, the only way to fix them is to spend more time, add more debug logging... There is no magic trick!
