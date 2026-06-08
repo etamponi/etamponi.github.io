@@ -1,0 +1,7 @@
+// Fix: on mobile the sticky article-title bar (#toc-bar) was rendering
+// behind scroll content due to z-index stacking context issues on iOS Safari.
+// The theme value of z-index:1 is too low; 100 keeps it above all content
+// while staying below Bootstrap modals/tooltips (z-index 1000+).
+#toc-bar {
+  z-index: 100 !important;
+}
